@@ -1,5 +1,5 @@
 export default function Statistics(props) {
-  const { avatar, username, tag, location, stats } = props;
+  //   const { avatar, username, tag, location, stats } = props;
   return (
     <section class="statistics">
       <h2 class="title">Upload stats</h2>
