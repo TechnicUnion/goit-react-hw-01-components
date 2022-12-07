@@ -1,4 +1,5 @@
 import Profile from './components/Profile';
+import Statistics from './components/Statistics';
 import user from './user';
 import data from './data';
 
@@ -12,6 +13,7 @@ export const App = () => {
         location={user.location}
         stats={user.stats}
       />
+      <Statistics title="Upload stats" items={data} />
     </div>
   );
 };
