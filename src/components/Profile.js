@@ -29,7 +29,7 @@ export default function Profile(props) {
   );
 }
 
-Profile.prototype = {
+Profile.propTypes = {
   avatar: PropTypes.string,
   username: PropTypes.string,
   tag: PropTypes.string,

@@ -17,7 +17,7 @@ export default function Statistics(props) {
   );
 }
 
-Statistics.prototype = {
-  title: PropTypes.string,
-  items: PropTypes.array,
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
 };

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 export default function FriendLit(props) {
   const { items } = props;
   return (
@@ -12,3 +14,7 @@ export default function FriendLit(props) {
     </ul>
   );
 }
+
+FriendLit.propTypes = {
+  items: PropTypes.array.isRequired,
+};
