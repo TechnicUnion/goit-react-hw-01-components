@@ -5,10 +5,15 @@ export default function FriendLit(props) {
   return (
     <ul>
       {items.map(item => (
-        <li class="item" key={item.id}>
-          <span class="status">{item.isOnline}</span>
-          <img class="avatar" src={item.avatar} alt="User avatar" width="48" />
-          <p class="name">{item.name}</p>
+        <li className="item" key={item.id}>
+          <span className="status">{item.isOnline}</span>
+          <img
+            className="avatar"
+            src={item.avatar}
+            alt="User avatar"
+            width="48"
+          />
+          <p className="name">{item.name}</p>
         </li>
       ))}
     </ul>
