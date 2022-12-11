@@ -1,15 +1,20 @@
 .transaction_history {
   margin: 0 auto;
   width: 550px;
-  background-color: rgb(179, 200, 240);
   text-align: center;
   border: 1px solid darkblue;
 }
 
-/* tbody tr:nth-child(odd) {
-  background-color: #ff33cc;
-} */
+thead {
+  background-color: rgb(43, 113, 241);
+  color: aliceblue;
+  height: 40px;
+}
 
-tbody tr:nth-child(even) {
-  background-color: #21f521;
+.odd {
+  background-color: rgb(150, 233, 205);
+}
+
+.even {
+  background-color: rgb(229, 233, 238);
 }

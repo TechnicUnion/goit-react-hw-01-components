@@ -12,9 +12,9 @@ export default function TransactionHistory(props) {
           <th>Currency</th>
         </tr>
       </thead>
-      {items.map(item => (
+      {items.map((item, index) => (
         <tbody key={item.id}>
-          <tr>
+          <tr className={(index + 1) % 2 <= 0 ? `${css.even}` : `${css.odd}`}>
             <td>{item.type}</td>
             <td>{item.amount}</td>
             <td>{item.currency}</td>
