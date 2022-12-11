@@ -5,7 +5,7 @@ export default function Statistics(props) {
   const { title, items } = props;
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
+      {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.stat_list}>
         {items.map(item => (
           <li className={css.item} key={item.id}>
@@ -19,6 +19,6 @@ export default function Statistics(props) {
 }
 
 Statistics.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   items: PropTypes.array.isRequired,
 };
