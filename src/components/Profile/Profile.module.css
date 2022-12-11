@@ -54,7 +54,7 @@ p {
 
 .stats_item {
   display: flex;
-  flex-grow: 1;
+  flex-basis: calc(100% / 3);
   align-items: center;
   flex-direction: column;
   border: 1px solid #afb1b8;
